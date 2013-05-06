@@ -1,0 +1,296 @@
+/*--------------------------------------------------------------------*/
+/*----------------------- jQuery Overloads ---------------------------*/
+/*--------------------------------------------------------------------*/
+* {
+	margin: 0;
+}
+html, body
+{
+background:-webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+margin-left: 0px;
+margin-right: 0px;
+height: 100%;
+}
+
+#debug
+{
+width: 200px;
+position: absolute;
+top: 12px;
+left: 600px;
+height: 300px;
+}
+
+
+
+
+#ledAttributes
+{
+/*border: 1px solid black;*/
+border-radius: 4px;
+position: relative;
+
+top: 12px;
+left: 453px;
+width: 100px;
+height: 419px;
+background: rgba(255,255,255,0);
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 8pt;
+font-weight: 200;
+text-shadow: 0 1px 1px rgba(0,0,0,.2), 0 0 30px rgba(0,0,0,.075);
+color: black;
+padding: 0px;
+text-align: left;
+letter-spacing: 0.1em;
+/*box-shadow: 0px 2px 2px 2px #ddd, inset 0 1px  rgba(255,255,255,0.2);*/
+
+}
+
+#slider /* positions relative to LED Attributes Frame */
+{
+background: -webkit-gradient(linear, left top, left bottom, 
+			color-stop(0%,rgba(255,255,255,1)),
+			color-stop(100%,rgba(100,100,100,0.3)));
+			
+width: 12px;
+position: relative;
+top: 40px;
+left: 20px;
+height: 423px;
+text-align: center;
+/*border: 1px solid rgba(100,100,100,0.3);*/
+box-shadow: 0px 0px 8px 2px rgba(100,100,100,0.3);
+}
+
+div.ui-slider-vertical .ui-state-default /* Slider Handle */
+{
+width: 24px;
+height: 12px;
+left: -7px;
+bottom: 10px;
+font-size: 8px;
+outline: none;
+}
+
+#mainHeader
+{
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 16pt;
+font-weight: 100;
+text-shadow: 0 1px 1px rgba(0,0,0,.2), 0 0 30px rgba(0,0,0,.075);
+color: #bababa;
+text-align: center;
+letter-spacing: 0.25em;
+background:-webkit-linear-gradient(#454545 0%, #000000 100%);
+padding: 10px 10px;
+margin-bottom: 30px;;
+}
+
+#mainFooter
+{
+
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 10pt;
+font-weight: 100;
+text-shadow: 0 1px 1px rgba(0,0,0,.2), 0 0 30px rgba(0,0,0,.075);
+color: #bababa;
+text-align: center;
+background:-webkit-linear-gradient(#454545 0%, #000000 100%);
+
+position: absolute;
+bottom:0px;
+width: 100%;
+padding-top: 2px;
+padding-bottom: 2px;
+letter-spacing: 0.1em;
+}
+
+#main
+{
+/*margin-top: 32px;
+margin-left: auto;
+margin-right: auto;*/
+width: 512px;
+height: 525px;
+margin: 48px auto 48px auto;
+
+/*background:-webkit-linear-gradient(#dfdfdf 0%, #bbbbbb 100%);*/
+
+}
+
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+a.nav:link 
+{
+	color: #b0b0b0; 
+	text-decoration: none; 
+	font-family: "Lucida", sans-serif; 
+	font-size: 14px; 
+	text-transform: uppercase;
+	text-align: center;
+	font-style: normal;
+} 
+
+
+
+#container
+{
+	position: absolute;
+	width: 512px;
+	height: 522px;
+	padding: 0px;
+	border: 5px solid rgba(80,80,80,1);
+	border-radius: 12px;
+	background:-webkit-linear-gradient(#f0f0f0 0%, #f9f9f9 100%); 
+	left: 44;
+	top: 44;
+	box-shadow: inset 0px 0px 10px black;
+	
+}
+
+#padsFrame
+{
+position: absolute;
+width: 424px;
+height: 424px;
+top: 50px;
+left:25px;
+border-radius: 12px;
+border:2px solid rgba(60,60,60,1);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(50,50,50,1)), color-stop(0%,rgba(60,60,60,1)), color-stop(100%, rgba(50,50,50,1)));
+box-shadow: 0px 2px 0px #ddd, inset 0 1px  rgba(255,255,255,0.2);
+}
+
+#seqPane
+{
+position: absolute;
+width: 500px;
+height: 50px;
+top: 479px;
+left:19px;
+border-radius: 4px;
+}
+
+#frameNav
+{
+position: absolute;
+width: 442px;
+height: 50px;
+top: 10px;
+left: 19px;
+border-radius: 4px;
+}
+
+
+.ledBorder
+{
+border-radius: 21px;
+border: 2px solid rgba(0,0,0,0);		
+position: absolute;
+width: 22px;
+height: 22px;
+text-align: center;
+padding: 2px;
+
+
+/*buttonTag.style.background = "rgba(100,100,100,255)";*/
+box-shadow: 0px 0px 4px 2px rgba(100,100,100,0);
+}
+
+
+.led
+{
+border-radius: 10px;
+border: 0px solid black;		
+position: absolute;
+width: 10px;
+height: 10px;
+top: 8px;
+left:8px;
+background: rgba(100,100,100,0.3);
+box-shadow: 0px 0px 4px 2px rgba(100,100,100,0.2);
+
+
+
+/*buttonTag.style.background = "rgba(100,100,100,255)";*/
+/*buttonTag.style.boxShadow = "0px 0px 4px 2px rgba(100,100,100,255)";*/
+}
+
+.pad
+{
+border: 2px solid rgba(190,190,190,255);
+border-radius: 8px;
+box-shadow: 0px 2px 0px #ddd, inset 0 1px  rgba(255,255,255,0.2);
+background: -webkit-linear-gradient(top, rgba(238,238,238,255) 0%,rgba(150,150,150,255) 100%);
+position: absolute;
+}
+
+
+
+
+.frameButton
+{
+position: absolute;
+color: #fff;
+border: 1px solid #1c74b3;
+border-top-color: #2c8ed1;
+border-bottom-color: #0d5b97;
+background: #2181cf;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#37a3eb", endColorstr="#2181cf");
+background: -webkit-gradient(linear, left top, left bottom, from(#37a3eb), to(#2181cf));
+background: -moz-linear-gradient(top, #37a3eb, #2181cf);
+-moz-box-shadow: 0 1px 0 #ddd,inset 0 1px 0 rgba(255,255,255,0.2);
+-webkit-box-shadow: 0 1px 0 #ddd,inset 0 1px 0 rgba(255,255,255,0.2);
+box-shadow: 0 1px 0 #ddd,inset 0 1px 0 rgba(255,255,255,0.2);
+text-shadow: rgba(0,0,0,0.2) 0 1px 0;
+-webkit-text-shadow: rgba(0,0,0,0.2) 0 1px 0;
+-moz-text-shadow: rgba(0,0,0,0.2) 0 1px 0;
+width: 50px;
+margin: 8px;
+border-radius: 4px;
+
+}
+
+.frameButton:hover 
+{
+
+}
+
+.frameButton:active 
+{
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+background-color:#4197ee;
+}
+
+#currentFrame
+{
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 9pt;
+font-weight: 200;
+text-shadow: 0 1px 1px rgba(0,0,0,.2), 0 0 30px rgba(0,0,0,.075);
+color: rgba(70,70,70,0.9);
+padding: 0px;
+text-align: left;
+bottom: 0px;
+letter-spacing: 0.1em;
+margin: 4px;
+position: absolute;
+/*box-shadow: 0px 2px 2px 2px #ddd, inset 0 1px  rgba(255,255,255,0.2);*/
+
+}
+	
+#nav
+{
+background-color: black;
+}
+
+li.nav 
+{
+display: inline; list-style: none; padding: 0px 23px;
+}
