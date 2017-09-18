@@ -1,8 +1,6 @@
 quneo_pad_animator
 ==================
 
-QuNeo_Pad_Animator
-
 July 22, 2013
 
 The QuNeo Pad Animator is a web application for programming pad LED sequences on the QuNeo’s pads. It converts an animation programmed on the web and exports it to a MIDI file, specifically formatted to communicate with the QuNeo’s LEDs. These MIDI files can be played as clips in Ableton Live, or in any digital audio workstation (DAW) that supports MIDI file playback to a MIDI controller.
@@ -16,3 +14,7 @@ To preview your animation, use the play button in the bottom left corner. The de
 To download your animation, hit the export button (next to Play and Pause). The download may take a moment to begin, so please be patient. (We suggest testing this before getting too far along with your animation). Once downloaded, import your animation into your DAW and play it as a MIDI file. Make sure you are outputting MIDI to your QuNeo on Channel 2.
 
 Please see the diagram and video below for further instructions on how to use the QuNeo Pad Animator
+
+[![qpayoutube] (https://github.com/connerlacy/quneo_pad_animator/blob/master/images/qpa_youtube.png](https://www.youtube.com/watch?v=-adI93PizzM)
+
+![qpaguide] (https://github.com/connerlacy/quneo_pad_animator/blob/master/images/qpaguide.jpg)
